@@ -4,15 +4,13 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDnyeyN1hMsQt-w_ZthwECpVhXVlPXxTLk",
-
-  authDomain: "inflectionland.firebaseapp.com",
-
-  projectId: "inflectionland",
-  storageBucket: "inflectionland.firebasestorage.app",
-  messagingSenderId: "279614473328",
-  appId: "1:279614473328:web:8188011d14d8f65735a0b5",
-  measurementId: "G-HJ2JDBN8JG"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJ_ID,
+  storageBucket: process.env.FIREBASE_STORG_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MSSG_SNDR_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MESUR_ID
 
 };
 const app = initializeApp(firebaseCongif);
