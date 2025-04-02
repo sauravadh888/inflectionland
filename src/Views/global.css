@@ -1,0 +1,29 @@
+/* src/global.css */
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply the gradient to the body */
+body {
+  background: linear-gradient(135deg,
+    #19163d 20%,
+    #242044 45%,
+    #2e264a 80%,
+    #1b1730 100%
+  );
+  color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Ensure containers are transparent to let the body’s background show */
+.homepage-container,
+.bg-dark-950,
+section.hero,
+.main-container {
+  background: transparent !important;
+}
